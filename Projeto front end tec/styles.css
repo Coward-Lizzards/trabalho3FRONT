@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    display: grid;
+    gap: 4px;
+    grid-template-rows: 40px 40px auto 60px 60px 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header' 'sidebar' 'main' 'footer';
+    height: 100vh;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f7b600;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    padding: 20px;
+}
+
+header a {
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: bold;
+    font-weight: bolder;
+    margin: 30px;
+    background-color: rgba(255,255,255, 25%);
+    border-radius: 5%;
+}
+
+nav {
+    position: sticky;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    margin-top: -40px;
+}
+
+nav div {
+
+    display: flexbox;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    background-color: white;
+    text-align: left;
+
+}
+
+nav h1 {
+    color: #797979;
+    background-color: #dbdbdb;
+    margin: auto;
+    padding: 5px;
+}
+
+nav hr {
+    color: white;
+    margin: 5px 0px 0px 5px;
+}
+
+.navlinks {
+    margin: 15px 0px 15px 0px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.navlinks:hover{
+    margin: 15px 0px 15px 0px;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+}
+
+nav a {
+    color: #f7b600;
+    cursor: pointer;
+}
+
+body {
+	font-size: 15px; ;
+	font-family: "Trebuche MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+main div {
+    display: flexbox;
+    float: left;
+    width: 60%;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    background-color: white;
+    text-align: left;
+
+}
+
+main h1 {
+    color: #f7b600;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+main a {
+    color: #f7b600;
+    cursor: pointer;
+}
+
+.branco {
+	color: white;
+}
+
+.logo {
+	color: #4e4e4e;
+	font-size: 50px;
+}
+
+
